@@ -28,6 +28,7 @@
   "homepage": "https://github.com/FlowFuse/node-red-dashboard-2-migration#readme",
   "devDependencies": {
     "eslint": "^8.48.0",
+    "eslint-config-standard": "^17.1.0",
     "mocha": "^10.4.0",
     "terser": "^5.31.0"
   }
