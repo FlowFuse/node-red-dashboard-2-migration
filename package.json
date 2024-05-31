@@ -1,0 +1,33 @@
+{
+  "name": "red-dashboard-2-migration",
+  "version": "0.0.1",
+  "description": "A module that exposes a migration script for converting Dashboard 1.0 flows to Dashboard 2.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/*.js",
+    "build": "npx terser index.js --compress --mangle --output index.min.js",
+    "lint": "eslint **/*.js -c .eslintrc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlowFuse/node-red-dashboard-2-migration.git"
+  },
+  "keywords": [
+    "node-red",
+    "node-red-dashboard",
+    "node-red-dashboard-2"
+  ],
+  "author": {
+    "name": "Joe Pavitt",
+    "url": "https://github.com/joepavitt"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/FlowFuse/node-red-dashboard-2-migration/issues"
+  },
+  "homepage": "https://github.com/FlowFuse/node-red-dashboard-2-migration#readme",
+  "devDependencies": {
+    "mocha": "^10.4.0",
+    "terser": "^5.31.0"
+  }
+}
