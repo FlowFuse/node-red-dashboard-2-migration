@@ -1,8 +1,8 @@
-const generateUiBase = require('./scripts/ui-base')
-const generateUiTheme = require('./scripts/ui-theme')
+const generateUiBase = require('./generators/ui-base')
+const generateUiTheme = require('./generators/ui-theme')
 
-const toUiPage = require('./scripts/ui-page')
-const toUiGroup = require('./scripts/ui-group')
+const toUiPage = require('./transformers/ui-page')
+const toUiGroup = require('./transformers/ui-group')
 
 const MigrateDashboard = {
     migrate: function (flow) {
