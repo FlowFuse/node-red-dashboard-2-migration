@@ -15,7 +15,7 @@ cd path/to/your/node-red-dashboard-2-migration
 node migrate path/to/your/flow.json
 ```
 
-The script whn then print to the terminal a valid `flow.json` which you can copy and paste into your Node-RED editor, via Node-RED's import functionality.
+The script will then print to the terminal a valid `flow.json` which you can copy and paste into your Node-RED editor, via Node-RED's import functionality.
 
 ### JavaScript
 
