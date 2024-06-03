@@ -17,8 +17,8 @@ const MigrateDashboard = {
         // loop over all nodes in the flow.json
         flow.forEach(node => {
             if (
-                transformerMap.hasOwnProperty(node.type) &&
-                transformers.hasOwnProperty(transformerMap[node.type]) &&
+                Object.prototype.hasOwnProperty.call(transformerMap, node.type) &&
+                Object.prototype.hasOwnProperty.call(transformers, transformerMap[node.type]) &&
                 typeof transformers[transformerMap[node.type]] === 'function'
             ) {
                 migratedFlow.push(transformers[transformerMap[node.type]](node, base.id, theme.id))

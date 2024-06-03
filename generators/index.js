@@ -1,4 +1,4 @@
 module.exports = {
     generateUiTheme: require('./ui-theme'),
-    generateUiBase: require('./ui-base'),
+    generateUiBase: require('./ui-base')
 }
