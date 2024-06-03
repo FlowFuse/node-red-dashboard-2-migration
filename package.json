@@ -1,5 +1,5 @@
 {
-  "name": "red-dashboard-2-migration",
+  "name": "node-red-dashboard-2-migration",
   "version": "0.0.1",
   "description": "A module that exposes a migration script for converting Dashboard 1.0 flows to Dashboard 2.0",
   "main": "index.js",
@@ -30,6 +30,7 @@
     "eslint": "^8.48.0",
     "eslint-config-standard": "^17.1.0",
     "mocha": "^10.4.0",
+    "should": "^13.2.3",
     "terser": "^5.31.0"
   }
 }

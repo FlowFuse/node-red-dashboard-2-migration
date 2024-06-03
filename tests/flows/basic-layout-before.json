@@ -1,3 +1,47 @@
-[{
-    "type": "ui_page" 
-}]
+[
+    {
+        "id": "b19aa9fbc6e46507",
+        "type": "ui_button",
+        "z": "94d6d107f1742efb",
+        "name": "",
+        "group": "856a31bba370e7fc",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "856a31bba370e7fc",
+        "type": "ui_group",
+        "name": "My Group",
+        "tab": "2543b03fbc35fb72",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2543b03fbc35fb72",
+        "type": "ui_tab",
+        "name": "My Page",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
