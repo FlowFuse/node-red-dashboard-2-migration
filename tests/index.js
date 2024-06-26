@@ -101,10 +101,7 @@ describe('Dashboard Migration Script', function () {
         const text = utils.getByType(migratedFlow, 'ui-text')[0]
         const text1 = utils.getByType(basicLayoutAfter, 'ui-text')[0]
 
-        // loop over all properties of text
-
         const excludeFromChecks = ['id', 'group']
-
         Object.keys(text).forEach((prop) => {
             if (!excludeFromChecks.includes(prop)) {
                 it('should set ' + prop + ' correctly ', function () {
@@ -116,6 +113,25 @@ describe('Dashboard Migration Script', function () {
                     }
                 })
             }
+        })
+    })
+
+    describe('UI Form:', function () {
+        const form = utils.getByType(migratedFlow, 'ui-form')[0]
+        const form1 = utils.getByType(basicLayoutAfter, 'ui-form')[0]
+
+        const excludeFromChecks = ['id', 'group']
+        Object.keys(form).forEach((prop) => {
+            if (!excludeFromChecks.includes(prop)) {
+                it('should set ' + prop + ' correctly ', function () {
+                    form[prop].should.eql(form1[prop])
+                })
+            }
+        })
+
+        // new properties
+        it('should set .resetOnSubmit correctly ', function () {
+            form.resetOnSubmit.should.equal(form1.resetOnSubmit)
         })
     })
 

@@ -49,6 +49,42 @@
         "wires": []
     },
     {
+        "id": "560a743fcfcea413",
+        "type": "ui-form",
+        "z": "94d6d107f1742efb",
+        "name": "",
+        "group": "ed865e310a46f41b",
+        "label": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Text Input",
+                "key": "text",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "text": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "resetOnSubmit": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 150,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "856a31bba370e7fc",
         "type": "ui-group",
         "name": "My Group",
