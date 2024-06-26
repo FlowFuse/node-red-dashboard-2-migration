@@ -175,6 +175,31 @@
         ]
     },
     {
+        "id": "19eba95ed97bb4e7",
+        "type": "ui_slider",
+        "z": "94d6d107f1742efb",
+        "name": "",
+        "label": "My Slider",
+        "tooltip": "",
+        "group": "856a31bba370e7fc",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "100",
+        "step": "10",
+        "className": "",
+        "x": 160,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "856a31bba370e7fc",
         "type": "ui_group",
         "name": "My Group",

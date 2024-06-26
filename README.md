@@ -40,6 +40,7 @@ const d2flow = MigrateDashboard.migrate(d1flow)
     - `.tooltip` is not supported
     - `.decouple` is not supported
     - `.animate` is not supported
+- `ui_slider` - converted to Dashboard 2.0's `ui-slider`
     
 ### Config Nodes
 
@@ -53,7 +54,6 @@ const d2flow = MigrateDashboard.migrate(d1flow)
 
 ## Not Yet Supported:
 
-- `ui_slider` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/19)
 - `ui_numeric` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/20)
 - `ui_text_input` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/21)
 - `ui_date_picker` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/22)

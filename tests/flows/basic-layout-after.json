@@ -176,6 +176,36 @@
         ]
     },
     {
+        "id": "3eb49d234b7a403c",
+        "type": "ui-slider",
+        "z": "94d6d107f1742efb",
+        "group": "f663864dda246564",
+        "name": "",
+        "label": "My Slider",
+        "tooltip": "",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "always",
+        "min": 0,
+        "max": "100",
+        "step": "10",
+        "color": "",
+        "colorTrack": "",
+        "colorThumb": "",
+        "className": "",
+        "x": 160,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "856a31bba370e7fc",
         "type": "ui-group",
         "name": "My Group",
