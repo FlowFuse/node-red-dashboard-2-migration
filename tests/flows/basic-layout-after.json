@@ -1,33 +1,5 @@
 [
     {
-        "id": "3bfec0651634a587",
-        "type": "ui_button",
-        "z": "59ec790452bff51d",
-        "d": true,
-        "group": "48a06ad17842366f",
-        "name": "",
-        "label": "button",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "emulateClick": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "iconPosition": "left",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 110,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "fed8f28d75ee666f",
         "type": "ui-text",
         "z": "94d6d107f1742efb",
@@ -79,6 +51,33 @@
         "splitLayout": "",
         "className": "",
         "x": 150,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "048f08dfd03526fd",
+        "type": "ui-button",
+        "z": "94d6d107f1742efb",
+        "group": "f663864dda246564",
+        "name": "",
+        "label": "Button Label",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "home",
+        "iconPosition": "left",
+        "payload": "static-payload",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 330,
         "y": 160,
         "wires": [
             []
