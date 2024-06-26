@@ -4,5 +4,6 @@
   "ui_button": "uiButton",
   "ui_dropdown": "uiDropdown",
   "ui_form": "uiForm",
+  "ui_switch": "uiSwitch",
   "ui_text": "uiText"
 }

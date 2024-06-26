@@ -36,7 +36,11 @@ const d2flow = MigrateDashboard.migrate(d1flow)
 - `ui_form` - converted to Dashboard 2.0's `ui-form`
 - `ui_button` - converted to Dashboard 2.0's `ui-button`
 - `ui_dropdown` - converted to Dashboard 2.0's `ui-dropdown`
-
+- `ui_switch` - converted to Dashboard 2.0's `ui-switch`
+    - `.tooltip` is not supported
+    - `.decouple` is not supported
+    - `.animate` is not supported
+    
 ### Config Nodes
 
 - `ui_tab` - converted to Dashboard 2.0's `ui-page`
@@ -49,7 +53,6 @@ const d2flow = MigrateDashboard.migrate(d1flow)
 
 ## Not Yet Supported:
 
-- `ui_switch` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/18)
 - `ui_slider` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/19)
 - `ui_numeric` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/20)
 - `ui_text_input` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/21)

@@ -163,6 +163,20 @@ describe('Dashboard Migration Script', function () {
         })
     })
 
+    describe('UI Switch:', function () {
+        const swtch = utils.getByType(migratedFlow, 'ui-switch')[0]
+        const switch1 = utils.getByType(basicLayoutAfter, 'ui-switch')[0]
+
+        const excludeFromChecks = ['id', 'group']
+        Object.keys(swtch).forEach((prop) => {
+            if (!excludeFromChecks.includes(prop)) {
+                it('should set ' + prop + ' correctly ', function () {
+                    swtch[prop].should.eql(switch1[prop])
+                })
+            }
+        })
+    })
+
     describe('Unsupported UI Nodes:', function () {
         it('should should be disabled in the NR Editor', function () {
             const template0 = utils.getByType(migratedFlow, 'ui_template')[0]

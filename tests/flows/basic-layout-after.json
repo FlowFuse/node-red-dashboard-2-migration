@@ -147,6 +147,35 @@
         ]
     },
     {
+        "id": "ecb1c0c7b3b72bf7",
+        "type": "ui-switch",
+        "z": "94d6d107f1742efb",
+        "name": "",
+        "label": "My Switch",
+        "group": "f663864dda246564",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "wifi",
+        "oncolor": "green",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "wifi",
+        "offcolor": "red",
+        "x": 330,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "856a31bba370e7fc",
         "type": "ui-group",
         "name": "My Group",
