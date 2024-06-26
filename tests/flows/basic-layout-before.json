@@ -200,6 +200,30 @@
         ]
     },
     {
+        "id": "fe03c45b52e5a9b5",
+        "type": "ui_text_input",
+        "z": "94d6d107f1742efb",
+        "group": "856a31bba370e7fc",
+        "name": "",
+        "label": "My Input",
+        "tooltip": "",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": false,
+        "sendOnBlur": true,
+        "className": "",
+        "x": 160,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "856a31bba370e7fc",
         "type": "ui_group",
         "name": "My Group",

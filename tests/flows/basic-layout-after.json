@@ -206,6 +206,31 @@
         ]
     },
     {
+        "id": "b82fbbff66011591",
+        "type": "ui-text-input",
+        "z": "94d6d107f1742efb",
+        "group": "f663864dda246564",
+        "name": "",
+        "label": "My Input",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": true,
+        "sendOnBlur": true,
+        "sendOnEnter": false,
+        "className": "",
+        "x": 160,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "856a31bba370e7fc",
         "type": "ui-group",
         "name": "My Group",

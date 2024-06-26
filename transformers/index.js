@@ -6,5 +6,6 @@ module.exports = {
     uiForm: require('./nodes/ui-form'),
     uiSlider: require('./nodes/ui-slider'),
     uiSwitch: require('./nodes/ui-switch'),
-    uiText: require('./nodes/ui-text')
+    uiText: require('./nodes/ui-text'),
+    uiTextInput: require('./nodes/ui-text-input')
 }
