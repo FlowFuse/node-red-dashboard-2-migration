@@ -1,5 +1,25 @@
 [
     {
+        "id": "79a7c26e91eca376",
+        "type": "ui_template",
+        "z": "94d6d107f1742efb",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 320,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "fed8f28d75ee666f",
         "type": "ui_text",
         "z": "94d6d107f1742efb",
