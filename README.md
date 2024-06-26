@@ -30,6 +30,14 @@ const d2flow = MigrateDashboard.migrate(d1flow)
 
 ## Supported Nodes
 
+### Nodes
+
+- `ui_text` - converted to Dashboard 2.0's `ui-text`
+- `ui_form` - converted to Dashboard 2.0's `ui-form`
+- `ui_button` - converted to Dashboard 2.0's `ui-button`
+
+### Config Nodes
+
 - `ui_tab` - converted to Dashboard 2.0's `ui-page`
 - `ui_group` - converted to Dashboard 2.0's `ui-group`
 
@@ -38,3 +46,18 @@ const d2flow = MigrateDashboard.migrate(d1flow)
 - `ui-base` - Not included in a Dashboard 1.0 `flow.json` export, so we create a standard default in it's place.
 - `ui-theme` - Not included in a Dashboard 1.0 `flow.json` export, so we create a standard default in it's place.
 
+## Not Yet Supported:
+
+- `ui_dropdown` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/17)
+- `ui_switch` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/18)
+- `ui_slider` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/19)
+- `ui_numeric` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/20)
+- `ui_text_input` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/21)
+- `ui_date_picker` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/22)
+- `ui_colour_picker` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/23)
+- `ui_gauge` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/26)
+- `ui_chart` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/27)
+- `ui_audio` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/28)
+- `ui_toast` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/29)
+- `ui_control` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/30)
+- `ui_template` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/31)
