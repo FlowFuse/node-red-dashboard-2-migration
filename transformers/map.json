@@ -1,5 +1,6 @@
 {
   "ui_tab": "uiPage",
   "ui_group": "uiGroup",
+  "ui_form": "uiForm",
   "ui_text": "uiText"
 }
