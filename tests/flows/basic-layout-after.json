@@ -1,8 +1,9 @@
 [
     {
         "id": "3bfec0651634a587",
-        "type": "ui-button",
+        "type": "ui_button",
         "z": "59ec790452bff51d",
+        "d": true,
         "group": "48a06ad17842366f",
         "name": "",
         "label": "button",

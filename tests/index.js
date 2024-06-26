@@ -95,4 +95,12 @@ describe('Dashboard Migration Script', function () {
             group.disabled.should.equal(group1.disabled)
         })
     })
+
+    describe('Unsupported UI Nodes:', function () {
+        it('should should be disabled in the NR Editor', function () {
+            const button0 = utils.getByType(migratedFlow, 'ui_button')[0]
+            const button1 = utils.getByType(basicLayoutAfter, 'ui_button')[0]
+            button0.d.should.equal(button1.d)
+        })
+    })
 })

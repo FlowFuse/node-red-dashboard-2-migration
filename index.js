@@ -26,9 +26,9 @@ const MigrateDashboard = {
             }
 
             if (node.type.startsWith('ui_')) {
-                // Unsupported UI node types, don't return anything
-                console.log('Unable to automatically migrate ' + node.type + ' nodes currently')
-                return
+                // Unsupported UI node types, disable them
+                console.log('Unable to automatically migrate ' + node.type + ' nodes currently. Disabling the node.')
+                node.d = true
             }
 
             // We don't have any particular migration logic for this node type
