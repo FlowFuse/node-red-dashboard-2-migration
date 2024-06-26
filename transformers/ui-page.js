@@ -14,7 +14,7 @@ module.exports = function (node, baseId, themeId) {
     node.ui = baseId
     node.path = '/' + toKebabCase(node.name)
     node.theme = themeId
-    node.layout = 'fixed' // closest we have to a Dashboard 1.0 layout
+    node.layout = 'flex' // closest we have to a Dashboard 1.0 layout
     node.order = 0
     node.className = ''
 
