@@ -96,9 +96,26 @@ describe('Dashboard Migration Script', function () {
         })
     })
 
+    describe('UI Text:', function () {
+        const text = utils.getByType(migratedFlow, 'ui-text')[0]
+        const text1 = utils.getByType(basicLayoutAfter, 'ui-text')[0]
+
+        // loop over all properties of text
+
+        Object.keys(text).forEach((prop) => {
+            it('should set ' + prop + ' correctly ', function () {
+                // check type
+                if (Array.isArray(text[prop])) {
+                    text[prop].length.should.equal(text1[prop].length)
+                } else {
+                    text[prop].should.equal(text1[prop])
+                }
+            })
+        })
+    })
+
     describe('Unsupported UI Nodes:', function () {
         it('should should be disabled in the NR Editor', function () {
-            console.log(migratedFlow)
             const button0 = utils.getByType(migratedFlow, 'ui_button')[0]
             const button1 = utils.getByType(basicLayoutAfter, 'ui_button')[0]
             button0.d.should.equal(button1.d)
