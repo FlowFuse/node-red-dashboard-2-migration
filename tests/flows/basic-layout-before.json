@@ -102,6 +102,47 @@
         ]
     },
     {
+        "id": "55bcb4188e44e62d",
+        "type": "ui_dropdown",
+        "z": "94d6d107f1742efb",
+        "name": "",
+        "label": "My Dropdown",
+        "tooltip": "",
+        "place": "Please Select",
+        "group": "856a31bba370e7fc",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": true,
+        "options": [
+            {
+                "label": "Option 1",
+                "value": "option1",
+                "type": "str"
+            },
+            {
+                "label": "Option 2",
+                "value": "option2",
+                "type": "str"
+            },
+            {
+                "label": "Option 3",
+                "value": "option3",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 340,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "856a31bba370e7fc",
         "type": "ui_group",
         "name": "My Group",

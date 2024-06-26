@@ -149,6 +149,20 @@ describe('Dashboard Migration Script', function () {
         })
     })
 
+    describe('UI Dropdown:', function () {
+        const dropdown = utils.getByType(migratedFlow, 'ui-dropdown')[0]
+        const dropdown1 = utils.getByType(basicLayoutAfter, 'ui-dropdown')[0]
+
+        const excludeFromChecks = ['id', 'group']
+        Object.keys(dropdown).forEach((prop) => {
+            if (!excludeFromChecks.includes(prop)) {
+                it('should set ' + prop + ' correctly ', function () {
+                    dropdown[prop].should.eql(dropdown1[prop])
+                })
+            }
+        })
+    })
+
     describe('Unsupported UI Nodes:', function () {
         it('should should be disabled in the NR Editor', function () {
             const template0 = utils.getByType(migratedFlow, 'ui_template')[0]
