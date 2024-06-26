@@ -1,26 +1,20 @@
 [
     {
-        "id": "b19aa9fbc6e46507",
-        "type": "ui_button",
+        "id": "79a7c26e91eca376",
+        "type": "ui_template",
         "z": "94d6d107f1742efb",
         "name": "",
-        "group": "856a31bba370e7fc",
         "order": 0,
         "width": 0,
         "height": 0,
-        "passthru": false,
-        "label": "button",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
         "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 110,
-        "y": 60,
+        "x": 320,
+        "y": 200,
         "wires": [
             []
         ]
@@ -76,6 +70,32 @@
         "splitLayout": "",
         "className": "",
         "x": 150,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e51c3b80c16ecc5a",
+        "type": "ui_button",
+        "z": "94d6d107f1742efb",
+        "name": "",
+        "group": "856a31bba370e7fc",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Button Label",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "home",
+        "payload": "static-payload",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 330,
         "y": 160,
         "wires": [
             []
