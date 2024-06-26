@@ -1,4 +1,5 @@
 module.exports = {
-    uiPage: require('./ui-page'),
-    uiGroup: require('./ui-group')
+    uiPage: require('./nodes/ui-page'),
+    uiGroup: require('./nodes/ui-group'),
+    uiText: require('./nodes/ui-text')
 }

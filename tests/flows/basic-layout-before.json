@@ -26,6 +26,27 @@
         ]
     },
     {
+        "id": "fed8f28d75ee666f",
+        "type": "ui_text",
+        "z": "94d6d107f1742efb",
+        "group": "856a31bba370e7fc",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "label:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
+        "fontSize": 16,
+        "color": "#ff0000",
+        "x": 270,
+        "y": 100,
+        "wires": []
+    },
+    {
         "id": "856a31bba370e7fc",
         "type": "ui_group",
         "name": "My Group",

@@ -59,6 +59,7 @@ describe('Dashboard Migration Script', function () {
     describe('UI Group:', function () {
         const group = utils.getByType(migratedFlow, 'ui-group')[0]
         const group1 = utils.getByType(basicLayoutAfter, 'ui-group')[0]
+        const page = utils.getByType(migratedFlow, 'ui-page')[0]
 
         it('should set .type correctly ', function () {
             // check type
@@ -67,7 +68,7 @@ describe('Dashboard Migration Script', function () {
 
         // modified properties
         it('should set .page correctly ', function () {
-            group.page.should.equal(group1.page)
+            group.page.should.equal(page.id)
         })
         it('should set .showTitle correctly ', function () {
             group.showTitle.should.equal(group1.showTitle)
@@ -93,6 +94,28 @@ describe('Dashboard Migration Script', function () {
         })
         it('should set .disabled correctly ', function () {
             group.disabled.should.equal(group1.disabled)
+        })
+    })
+
+    describe('UI Text:', function () {
+        const text = utils.getByType(migratedFlow, 'ui-text')[0]
+        const text1 = utils.getByType(basicLayoutAfter, 'ui-text')[0]
+
+        // loop over all properties of text
+
+        const excludeFromChecks = ['id', 'group']
+
+        Object.keys(text).forEach((prop) => {
+            if (!excludeFromChecks.includes(prop)) {
+                it('should set ' + prop + ' correctly ', function () {
+                    // check type
+                    if (Array.isArray(text[prop])) {
+                        text[prop].length.should.equal(text1[prop].length)
+                    } else {
+                        text[prop].should.equal(text1[prop])
+                    }
+                })
+            }
         })
     })
 
