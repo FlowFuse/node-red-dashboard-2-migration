@@ -46,7 +46,7 @@
         "ui": "69c6fbb86f6e5033",
         "path": "/my-page",
         "icon": "dashboard",
-        "layout": "fixed",
+        "layout": "flex",
         "theme": "0996ab6125fd4a4b",
         "order": 0,
         "className": "",
