@@ -105,6 +105,132 @@
         ]
     },
     {
+        "id": "5be48f9b12081c54",
+        "type": "ui-dropdown",
+        "z": "94d6d107f1742efb",
+        "group": "f663864dda246564",
+        "name": "",
+        "label": "My Dropdown",
+        "tooltip": "",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": true,
+        "chips": false,
+        "clearable": false,
+        "options": [
+            {
+                "label": "Option 1",
+                "value": "option1",
+                "type": "str"
+            },
+            {
+                "label": "Option 2",
+                "value": "option2",
+                "type": "str"
+            },
+            {
+                "label": "Option 3",
+                "value": "option3",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 340,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ecb1c0c7b3b72bf7",
+        "type": "ui-switch",
+        "z": "94d6d107f1742efb",
+        "name": "",
+        "label": "My Switch",
+        "group": "f663864dda246564",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "wifi",
+        "oncolor": "green",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "wifi",
+        "offcolor": "red",
+        "x": 330,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3eb49d234b7a403c",
+        "type": "ui-slider",
+        "z": "94d6d107f1742efb",
+        "group": "f663864dda246564",
+        "name": "",
+        "label": "My Slider",
+        "tooltip": "",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "always",
+        "min": 0,
+        "max": "100",
+        "step": "10",
+        "color": "",
+        "colorTrack": "",
+        "colorThumb": "",
+        "className": "",
+        "x": 160,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b82fbbff66011591",
+        "type": "ui-text-input",
+        "z": "94d6d107f1742efb",
+        "group": "f663864dda246564",
+        "name": "",
+        "label": "My Input",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": true,
+        "sendOnBlur": true,
+        "sendOnEnter": false,
+        "className": "",
+        "x": 160,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "856a31bba370e7fc",
         "type": "ui-group",
         "name": "My Group",

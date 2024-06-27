@@ -149,6 +149,62 @@ describe('Dashboard Migration Script', function () {
         })
     })
 
+    describe('UI Dropdown:', function () {
+        const dropdown = utils.getByType(migratedFlow, 'ui-dropdown')[0]
+        const dropdown1 = utils.getByType(basicLayoutAfter, 'ui-dropdown')[0]
+
+        const excludeFromChecks = ['id', 'group']
+        Object.keys(dropdown).forEach((prop) => {
+            if (!excludeFromChecks.includes(prop)) {
+                it('should set ' + prop + ' correctly ', function () {
+                    dropdown[prop].should.eql(dropdown1[prop])
+                })
+            }
+        })
+    })
+
+    describe('UI Switch:', function () {
+        const swtch = utils.getByType(migratedFlow, 'ui-switch')[0]
+        const switch1 = utils.getByType(basicLayoutAfter, 'ui-switch')[0]
+
+        const excludeFromChecks = ['id', 'group']
+        Object.keys(swtch).forEach((prop) => {
+            if (!excludeFromChecks.includes(prop)) {
+                it('should set ' + prop + ' correctly ', function () {
+                    swtch[prop].should.eql(switch1[prop])
+                })
+            }
+        })
+    })
+
+    describe('UI Slider:', function () {
+        const slider = utils.getByType(migratedFlow, 'ui-slider')[0]
+        const slider1 = utils.getByType(basicLayoutAfter, 'ui-slider')[0]
+
+        const excludeFromChecks = ['id', 'group']
+        Object.keys(slider).forEach((prop) => {
+            if (!excludeFromChecks.includes(prop)) {
+                it('should set ' + prop + ' correctly ', function () {
+                    slider[prop].should.eql(slider1[prop])
+                })
+            }
+        })
+    })
+
+    describe('UI Text Input:', function () {
+        const input = utils.getByType(migratedFlow, 'ui-text-input')[0]
+        const input1 = utils.getByType(basicLayoutAfter, 'ui-text-input')[0]
+
+        const excludeFromChecks = ['id', 'group']
+        Object.keys(input).forEach((prop) => {
+            if (!excludeFromChecks.includes(prop)) {
+                it('should set ' + prop + ' correctly ', function () {
+                    input[prop].should.eql(input1[prop])
+                })
+            }
+        })
+    })
+
     describe('Unsupported UI Nodes:', function () {
         it('should should be disabled in the NR Editor', function () {
             const template0 = utils.getByType(migratedFlow, 'ui_template')[0]
