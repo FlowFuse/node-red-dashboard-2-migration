@@ -45,26 +45,14 @@ const MigrateDashboard = {
             migratedFlow.push(node)
         })
 
-        console.log(idMap)
-        // loop ovr all nodes in thw flow and ensure we have updated references:
-
-        migratedFlow.forEach(node => {
-            if (node.wires && node.wires.length) {
-                node.wires = node.wires.map(wire => {
-                    return wire.map(id => {
-                        return idMap[id] || id
-                    })
-                })
-            }
-            if (node.group) {
-                node.group = idMap[node.group] || node.group
-            }
-            if (node.page) {
-                node.page = idMap[node.page] || node.page
-            }
-        })
-
-        return migratedFlow
+        // work smart, not hard
+        let strJson = JSON.stringify(migratedFlow)
+        // loop over idMap
+        for (const key in idMap) {
+            // replace all instances of the old ID with the new ID
+            strJson = strJson.replaceAll(key, idMap[key])
+        }
+        return JSON.parse(strJson)
     }
 }
 
