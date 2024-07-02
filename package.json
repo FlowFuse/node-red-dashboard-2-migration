@@ -1,6 +1,6 @@
 {
   "name": "@flowfuse/node-red-dashboard-2-migration",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A module that exposes a migration script for converting Dashboard 1.0 flows to Dashboard 2.0",
   "main": "index.js",
   "scripts": {
