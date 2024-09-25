@@ -205,6 +205,20 @@ describe('Dashboard Migration Script', function () {
         })
     })
 
+    describe('UI Chart', function () {
+        const chart = utils.getByType(migratedFlow, 'ui-chart')[0]
+        const chart1 = utils.getByType(basicLayoutAfter, 'ui-chart')[0]
+
+        const excludeFromChecks = ['id', 'group']
+        Object.keys(chart).forEach((prop) => {
+            if (!excludeFromChecks.includes(prop)) {
+                it('should set ' + prop + ' correctly ', function () {
+                    chart[prop].should.eql(chart1[prop])
+                })
+            }
+        })
+    })
+
     describe('Unsupported UI Nodes:', function () {
         it('should should be disabled in the NR Editor', function () {
             const template0 = utils.getByType(migratedFlow, 'ui_template')[0]
