@@ -3,12 +3,16 @@ module.exports = function (node, baseId, themeId) {
 
     // update properties
     node.units=node.label;
-    node.segments[1].from=node.min;
-    node.segments[1].colors=node.colors[1];
-    node.segments[2].from=node.seg1;
+    node.segments=[]
+    node.segments[0]={}
+    node.segments[0].from=node.min;
+    node.segments[0].colors=node.colors[0];
+    node.segments[1]={}
+    node.segments[1].from=node.seg1;
+    node.segments[1].color=node.colors[1];
+    node.segments[2]={}
+    node.segments[2].from=node.seg2;
     node.segments[2].color=node.colors[2];
-    node.segments[3].from=node.seg2;
-    node.segments[3].color=node.colors[3];
     switch (node.gtype) {
         case "gage": //gauge 
             node.gtype="gauge-half";
@@ -25,17 +29,14 @@ module.exports = function (node, baseId, themeId) {
     const index_pre = str.indexOf("{{value}}");
     if (index_pre !== -1) {
       const result_pre = str.substring(0, index_pre);
-        node.prefix=result_pre;
+      node.prefix=result_pre;
+      const index_suf = index_pre+9;
+      const result_suf = str.substring(index_suf, );
+      node.suffix=result_suf;
     } else {
       node.prefix=""
-    } 
-    const index_suf = str.indexOf("{{value}}");
-    if (index_suf !== -1) {
-      const result_suf = str.substring(index_suf+9, );
-        node.suffix=result_suf;
-    } else {
       node.suffix=""
-    } 
+    }; 
 
     // new properties
     node.icon=""
