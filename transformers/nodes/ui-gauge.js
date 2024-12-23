@@ -3,16 +3,23 @@ module.exports = function (node, baseId, themeId) {
 
     // update properties
     node.units=node.label;
-    node.segments=[]
-    node.segments[0]={}
+    node.segments=[{},{},{}]
     node.segments[0].from=node.min;
     node.segments[0].colors=node.colors[0];
-    node.segments[1]={}
-    node.segments[1].from=node.seg1;
+    if(node.seg1!=""){
+      node.segments[1].from=node.seg1;
+    }else{
+      node.segments[1].from=(node.max-node.min)*.4+node.min;
+    }
     node.segments[1].color=node.colors[1];
-    node.segments[2]={}
-    node.segments[2].from=node.seg2;
+    
+    if(node.seg2!=""){
+      node.segments[2].from=node.seg2;
+    }else{
+      node.segments[2].from=node.max-(node.max-node.min)*.3;
+    }
     node.segments[2].color=node.colors[2];
+    
     switch (node.gtype) {
         case "gage": //gauge 
             node.gtype="gauge-half";
