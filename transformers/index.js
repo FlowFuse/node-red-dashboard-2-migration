@@ -10,4 +10,3 @@ module.exports = {
     uiTextInput: require('./nodes/ui-text-input'),
     uiChart: require('./nodes/ui-chart')
 }
-
