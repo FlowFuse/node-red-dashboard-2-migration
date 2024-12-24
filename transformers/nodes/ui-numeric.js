@@ -5,15 +5,14 @@ module.exports = function (node, baseId, themeId) {
     // NONE
 
     // new properties
-    node.tooltip=""
-    node.sendOnBlue=true
-    node.sendOnEnter=true
-    node.clearable=false
-    node.icon=""
-    node.iconPosition="left"
-    node.iconInnerPosition="inside"
-    node.spinner="default"
-
+    node.tooltip = ''
+    node.sendOnBlue = true
+    node.sendOnEnter = true
+    node.clearable = false
+    node.icon = ''
+    node.iconPosition = 'left'
+    node.iconInnerPosition = 'inside'
+    node.spinner = 'default'
 
     // remove properties
     delete node.format
