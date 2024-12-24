@@ -7,5 +7,6 @@
   "ui_slider": "uiSlider",
   "ui_switch": "uiSwitch",
   "ui_text": "uiText",
-  "ui_text_input": "uiTextInput"
+  "ui_text_input": "uiTextInput",
+  "ui_notification": "uiNotification"
 }
