@@ -19,7 +19,7 @@ Please note that this script does not cover everything, see below for a list of 
 - `ui_slider` - converted to Dashboard 2.0's `ui-slider`
 - `ui_text_input` - converted to Dashboard 2.0's `ui-text-input`
     - `.tooltip` is not supported
-    
+- `ui_control` - converted to Dashboard 2.0's `ui-control`
 ### Config Nodes
 
 - `ui_tab` - converted to Dashboard 2.0's `ui-page`
@@ -39,7 +39,6 @@ Please note that this script does not cover everything, see below for a list of 
 - `ui_chart` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/27)
 - `ui_audio` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/28)
 - `ui_toast` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/29)
-- `ui_control` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/30)
 - `ui_template` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/31)
 
 ## Usage
