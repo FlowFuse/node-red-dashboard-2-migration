@@ -5,7 +5,7 @@ module.exports = function (node, baseId, themeId) {
     // NONE
 
     // new properties
-    node.ui=baseId;
+    node.ui = baseId
 
     // remove properties
     // NONE
