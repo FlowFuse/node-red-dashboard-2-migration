@@ -224,6 +224,25 @@
         ]
     },
     {
+        "id": "73ce8707dab7de0a",
+        "type": "ui_toast",
+        "z": "94d6d107f1742efb",
+        "position": "prompt",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "Cancel",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 350,
+        "y": 400,
+        "wires": []
+    },
+    {
         "id": "856a31bba370e7fc",
         "type": "ui_group",
         "name": "My Group",

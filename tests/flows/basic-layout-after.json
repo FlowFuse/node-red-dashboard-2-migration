@@ -231,6 +231,30 @@
         ]
     },
     {
+        "id": "c147bc430094baf8",
+        "type": "ui-notification",
+        "z": "94d6d107f1742efb",
+        "ui": "0996ab6125fd4a4b",
+        "position": "center center",
+        "colorDefault": true,
+        "color": null,
+        "displayTime": "3",
+        "showCountdown": false,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "",
+        "allowConfirm": true,
+        "confirmText": "OK",
+        "raw": false,
+        "className": "",
+        "name": "",
+        "x": 350,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "856a31bba370e7fc",
         "type": "ui-group",
         "name": "My Group",
