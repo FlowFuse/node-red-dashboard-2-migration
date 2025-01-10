@@ -231,6 +231,39 @@
         ]
     },
     {
+		"id": "940a12ce19bf2212",
+		"type": "ui-number-input",
+		"z": "94d6d107f1742efb",
+		"name": "",
+		"label": "numeric",
+		"tooltip": "",
+		"group": "f663864dda246564",
+		"order": 13,
+		"width": 0,
+		"height": 0,
+		"passthru": true,
+		"topic": "topic",
+		"topicType": "msg",
+		"min": 0,
+		"max": 10,
+		"step": 1,
+		"className": "",
+		"x": 320,
+		"y": 440,
+		"wires": [
+			[
+
+			]
+		],
+		"sendOnBlue": true,
+		"sendOnEnter": true,
+		"clearable": false,
+		"icon": "",
+		"iconPosition": "left",
+		"iconInnerPosition": "inside",
+		"spinner": "default"
+	},
+    {
         "id": "856a31bba370e7fc",
         "type": "ui-group",
         "name": "My Group",
