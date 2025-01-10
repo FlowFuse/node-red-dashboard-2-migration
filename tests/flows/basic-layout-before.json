@@ -224,6 +224,18 @@
         ]
     },
     {
+        "id": "199ff7a2c674e737",
+        "type": "ui_audio",
+        "z": "94d6d107f1742efb",
+        "name": "My Audio Out",
+        "group": "856a31bba370e7fc",
+        "voice": "urn:moz-tts:sapi:Microsoft David - English (United States)?en-US",
+        "always": "",
+        "x": 340,
+        "y": 80,
+        "wires": []
+    },
+    {
         "id": "856a31bba370e7fc",
         "type": "ui_group",
         "name": "My Group",
