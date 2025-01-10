@@ -231,6 +231,51 @@
         ]
     },
     {
+		"id": "ca93de861ac43763",
+		"type": "ui-gauge",
+		"z": "94d6d107f1742efb",
+		"name": "My Favorite Gauge",
+		"group": "f663864dda246564",
+		"order": 12,
+		"width": 0,
+		"height": 0,
+		"gtype": "gauge-half",
+		"title": "gauge",
+		"label": "units",
+		"min": 0,
+		"max": 10,
+		"diff": false,
+		"className": "",
+		"x": 350,
+		"y": 320,
+		"wires": [
+
+		],
+		"units": "units",
+		"segments": [
+			{
+				"from": 0,
+				"colors": "#00b500"
+			},
+			{
+				"from": 4,
+				"color": "#e6e600"
+			},
+			{
+				"from": 7,
+				"color": "#ca3838"
+			}
+		],
+		"prefix": "",
+		"suffix": " %",
+		"icon": "",
+		"sizeThickness": 16,
+		"sizeGap": 4,
+		"sizeKeyThickness": 8,
+		"styleRounded": true,
+		"styleGlow": false
+	},
+    {
         "id": "856a31bba370e7fc",
         "type": "ui-group",
         "name": "My Group",

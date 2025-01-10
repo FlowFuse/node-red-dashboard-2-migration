@@ -224,6 +224,34 @@
         ]
     },
     {
+        "id": "7fd46d95e548d6f4",
+        "type": "ui_gauge",
+        "z": "94d6d107f1742efb",
+        "name": "My Favorite Gauge",
+        "group": "856a31bba370e7fc",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}} %",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 350,
+        "y": 320,
+        "wires": []
+    },
+    {
         "id": "856a31bba370e7fc",
         "type": "ui_group",
         "name": "My Group",
