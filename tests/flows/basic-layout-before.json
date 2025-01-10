@@ -224,6 +224,18 @@
         ]
     },
     {
+        "id": "12094eeb6261dd1d",
+        "type": "ui_ui_control",
+        "z": "94d6d107f1742efb",
+        "name": "My Control",
+        "events": "all",
+        "x": 320,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "856a31bba370e7fc",
         "type": "ui_group",
         "name": "My Group",
