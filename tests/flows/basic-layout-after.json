@@ -231,6 +231,25 @@
         ]
     },
     {
+        "id": "d640dcf00ab9a978",
+        "type": "ui-audio",
+        "z": "94d6d107f1742efb",
+        "group": "b191960874c7c44e",
+        "name": "My Audio Out",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "src": "",
+        "autoplay": "",
+        "loop": "off",
+        "muted": "off",
+        "x": 340,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "856a31bba370e7fc",
         "type": "ui-group",
         "name": "My Group",
