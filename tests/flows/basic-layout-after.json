@@ -231,6 +231,38 @@
         ]
     },
     {
+        "id": "71985e85957f8be3",
+        "type": "ui-led",
+        "z": "78ee589ecd091670",
+        "name": "My Led",
+        "group": "f663864dda246564",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "label": "My Led",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "states": [
+            {
+                "value": "false",
+                "valueType": "bool",
+                "color": "#ff0000"
+            },
+            {
+                "value": "true",
+                "valueType": "bool",
+                "color": "#00ff00"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showBorder": true,
+        "showGlow": true,
+        "x": 990,
+        "y": 200,
+        "wires": []
+    },
+    {
         "id": "856a31bba370e7fc",
         "type": "ui-group",
         "name": "My Group",
