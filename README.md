@@ -19,7 +19,7 @@ Please note that this script does not cover everything, see below for a list of 
 - `ui_slider` - converted to Dashboard 2.0's `ui-slider`
 - `ui_text_input` - converted to Dashboard 2.0's `ui-text-input`
     - `.tooltip` is not supported
-- `ui_led` - converted to Dashboard 2.0's `ui-led`
+- `ui_led` - converted to Dashboard 2.0's `ui-led`. This is not a core node, but can be installed through the [Node-RED Palette Manager](https://flows.nodered.org/node/@flowfuse/node-red-dashboard-2-ui-led)
 
 ### Config Nodes
 
