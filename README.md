@@ -19,7 +19,7 @@ Please note that this script does not cover everything, see below for a list of 
 - `ui_slider` - converted to Dashboard 2.0's `ui-slider`
 - `ui_text_input` - converted to Dashboard 2.0's `ui-text-input`
     - `.tooltip` is not supported
-- `ui_toast` - converted to Dashboars 2.0's `ui-notification`
+- `ui_toast` - converted to Dashboard 2.0's `ui-notification`
     
 ### Config Nodes
 
