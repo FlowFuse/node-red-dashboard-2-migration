@@ -12,7 +12,7 @@ const MigrateDashboard = {
     
         const comment_log = generators.generateCommentLog();
 
-        let comment_string = "This is the comment log for the Node-Red Migration Page. As a rule of thumb, any node type that is listed in the README as \"Not Yet Supported\" could use help in migrating over. For more details please head to the [Github](https://github.com/FlowFuse/node-red-dashboard-2-migration) to help contribute. \n Any 1.0 nodes unable to successfully migrate are disabled to easily manually fix the issue. \n The following nodes were unable to automatically migrate: \n"
+        let comment_string = "This is the comment log for the Node-Red Migration Page. As a rule of thumb, any node type that is listed in the README as \"Not Yet Supported\" could use help in migrating over. For more details please head to the [Github](https://github.com/FlowFuse/node-red-dashboard-2-migration) to help contribute. \n Any 1.0 nodes unable to successfully migrate are kept in the flow, but disabled, to enable manual updating of the nodes. \n The following nodes were unable to automatically migrate: \n"
 
         // generate nodes we know D1.0 doesn't provide
         const base = generators.generateUiBase()
