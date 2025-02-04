@@ -6,7 +6,7 @@ module.exports = function (node, baseId, themeId) {
 
     // new properties
     node.tooltip = ''
-    node.sendOnBlue = true
+    node.sendOnBlur = true
     node.sendOnEnter = true
     node.clearable = false
     node.icon = ''

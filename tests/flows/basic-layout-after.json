@@ -255,7 +255,7 @@
 
 			]
 		],
-		"sendOnBlue": true,
+		"sendOnBlur": true,
 		"sendOnEnter": true,
 		"clearable": false,
 		"icon": "",
