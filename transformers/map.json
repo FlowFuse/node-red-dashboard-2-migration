@@ -9,4 +9,5 @@
   "ui_text": "uiText",
   "ui_text_input": "uiTextInput",
   "ui_toast": "uiNotification"
+  "ui_numeric": "uiNumeric"
 }

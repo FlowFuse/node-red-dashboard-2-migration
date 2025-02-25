@@ -243,6 +243,32 @@
         "wires": []
     },
     {
+        "id": "b52c292d531874a6",
+        "type": "ui_numeric",
+        "z": "94d6d107f1742efb",
+        "name": "",
+        "label": "numeric",
+        "tooltip": "",
+        "group": "856a31bba370e7fc",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "$ {{value}} ",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 320,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "856a31bba370e7fc",
         "type": "ui_group",
         "name": "My Group",

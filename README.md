@@ -20,6 +20,7 @@ Please note that this script does not cover everything, see below for a list of 
 - `ui_text_input` - converted to Dashboard 2.0's `ui-text-input`
     - `.tooltip` is not supported
 - `ui_toast` - converted to Dashboard 2.0's `ui-notification`
+- `ui_numeric` - converted to Dashboard 2.0's `ui-numeric-input`
     
 ### Config Nodes
 
@@ -33,7 +34,6 @@ Please note that this script does not cover everything, see below for a list of 
 
 ## Not Yet Supported:
 
-- `ui_numeric` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/20)
 - `ui_date_picker` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/22)
 - `ui_colour_picker` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/23)
 - `ui_gauge` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/26)
