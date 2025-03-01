@@ -205,6 +205,20 @@ describe('Dashboard Migration Script', function () {
         })
     })
 
+    describe('UI Chart', function () {
+        const chart = utils.getByType(migratedFlow, 'ui-chart')[0]
+        const chart1 = utils.getByType(basicLayoutAfter, 'ui-chart')[0]
+
+        const excludeFromChecks = ['id', 'group']
+        Object.keys(chart).forEach((prop) => {
+            if (!excludeFromChecks.includes(prop)) {
+                it('should set ' + prop + ' correctly ', function () {
+                    chart[prop].should.eql(chart1[prop])
+                })
+            }
+        })
+    })
+    
     describe('UI Number Input', function () {
         const input = utils.getByType(migratedFlow, 'ui-number-input')[0]
         const input1 = utils.getByType(basicLayoutAfter, 'ui-number-input')[0]
