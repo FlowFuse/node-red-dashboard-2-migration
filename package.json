@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha tests/*.js",
     "build": "npx terser index.js --compress --mangle --output index.min.js",
-    "lint": "eslint **/*.js -c .eslintrc"
+    "lint": "eslint \"**/*.js\" -c .eslintrc"
   },
   "repository": {
     "type": "git",
