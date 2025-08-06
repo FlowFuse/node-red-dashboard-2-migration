@@ -218,6 +218,20 @@ describe('Dashboard Migration Script', function () {
         })
     })
 
+    describe('UI Number Input', function () {
+        const input = utils.getByType(migratedFlow, 'ui-number-input')[0]
+        const input1 = utils.getByType(basicLayoutAfter, 'ui-number-input')[0]
+
+        const excludeFromChecks = ['id', 'group']
+        Object.keys(input).forEach((prop) => {
+            if (!excludeFromChecks.includes(prop)) {
+                it('should set ' + prop + ' correctly ', function () {
+                    input[prop].should.eql(input1[prop])
+                })
+            }
+        })
+    })
+
     describe('Unsupported UI Nodes:', function () {
         it('should should be disabled in the NR Editor', function () {
             const template0 = utils.getByType(migratedFlow, 'ui_template')[0]
