@@ -219,7 +219,6 @@ describe('Dashboard Migration Script', function () {
         })
     })
 
-
     describe('UI Number Input', function () {
         const input = utils.getByType(migratedFlow, 'ui-number-input')[0]
         const input1 = utils.getByType(basicLayoutAfter, 'ui-number-input')[0]
