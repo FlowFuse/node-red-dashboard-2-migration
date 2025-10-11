@@ -1,12 +1,12 @@
 {
   "name": "@flowfuse/node-red-dashboard-2-migration",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A module that exposes a migration script for converting Dashboard 1.0 flows to Dashboard 2.0",
   "main": "index.js",
   "scripts": {
     "test": "mocha tests/*.js",
     "build": "npx terser index.js --compress --mangle --output index.min.js",
-    "lint": "eslint **/*.js -c .eslintrc"
+    "lint": "eslint \"**/*.js\" -c .eslintrc"
   },
   "repository": {
     "type": "git",
