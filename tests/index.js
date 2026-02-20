@@ -205,6 +205,20 @@ describe('Dashboard Migration Script', function () {
         })
     })
 
+    describe('UI Control:', function () {
+        const button = utils.getByType(migratedFlow, 'ui-control')[0]
+        const button1 = utils.getByType(basicLayoutAfter, 'ui-control')[0]
+
+        const excludeFromChecks = ['id']
+        Object.keys(button).forEach((prop) => {
+            if (!excludeFromChecks.includes(prop)) {
+                it('should set ' + prop + ' correctly ', function () {
+                    button[prop].should.eql(button1[prop])
+                })
+            }
+        })
+    })
+
     describe('UI Number Input', function () {
         const input = utils.getByType(migratedFlow, 'ui-number-input')[0]
         const input1 = utils.getByType(basicLayoutAfter, 'ui-number-input')[0]
