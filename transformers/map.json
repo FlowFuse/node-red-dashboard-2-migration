@@ -8,5 +8,6 @@
   "ui_switch": "uiSwitch",
   "ui_text": "uiText",
   "ui_text_input": "uiTextInput",
+  "ui_ui_control": "uiControl",
   "ui_numeric": "uiNumeric"
 }
