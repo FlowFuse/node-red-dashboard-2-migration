@@ -231,6 +231,19 @@
         ]
     },
     {
+        "id": "3cef1870d65a9462",
+        "type": "ui-control",
+        "z": "94d6d107f1742efb",
+        "name": "My Control",
+        "ui": "69c6fbb86f6e5033",
+        "events": "all",
+        "x": 320,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
 		"id": "940a12ce19bf2212",
 		"type": "ui-number-input",
 		"z": "94d6d107f1742efb",
