@@ -9,6 +9,10 @@ const MigrateDashboard = {
         const idMap = {} // map old IDs to new IDs so that we can update references to them
 
         const migratedFlow = []
+    
+        const comment_log = generators.generateCommentLog();
+
+        let comment_string = "This is the comment log for the Node-Red Migration Page. As a rule of thumb, any node type that is listed in the README as \"Not Yet Supported\" could use help in migrating over. For more details please head to the [Github](https://github.com/FlowFuse/node-red-dashboard-2-migration) to help contribute. \n Any 1.0 nodes unable to successfully migrate are kept in the flow, but disabled, to enable manual updating of the nodes. \n The following nodes were unable to automatically migrate: \n"
 
         // generate nodes we know D1.0 doesn't provide
         const base = generators.generateUiBase()
@@ -37,6 +41,9 @@ const MigrateDashboard = {
             if (node.type.startsWith('ui_')) {
                 // Unsupported UI node types, disable them
                 console.log('Unable to automatically migrate ' + node.type + ' nodes currently. Disabling the node.')
+                // Develop String that will be added to Comment.
+                let log_string =  "   - "+node.name+' Type:'+node.type + "\n"
+                comment_string = comment_string + log_string
                 node.d = true
             }
 
@@ -44,6 +51,10 @@ const MigrateDashboard = {
             // Not a Dashboard 1.0 node, we can just return it as is
             migratedFlow.push(node)
         })
+        
+        //Add Log to Comment Node then Node to flow.
+        comment_log.info = comment_string
+        migratedFlow.push(comment_log)
 
         // work smart, not hard
         let strJson = JSON.stringify(migratedFlow)
