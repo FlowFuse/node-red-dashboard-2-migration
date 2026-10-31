@@ -162,6 +162,19 @@ describe('Dashboard Migration Script', function () {
             }
         })
     })
+    describe('UI LED:', function () {
+        const input = utils.getByType(migratedFlow, 'ui-led')[0]
+        const input1 = utils.getByType(basicLayoutAfter, 'ui-led')[0]
+
+        const excludeFromChecks = ['id', 'group']
+        Object.keys(input).forEach((prop) => {
+            if (!excludeFromChecks.includes(prop)) {
+                it('should set ' + prop + ' correctly ', function () {
+                    input[prop].should.eql(input1[prop])
+                })
+            }
+        })
+    })
 
     describe('UI Switch:', function () {
         const swtch = utils.getByType(migratedFlow, 'ui-switch')[0]
