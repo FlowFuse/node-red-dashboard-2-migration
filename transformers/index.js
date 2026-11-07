@@ -8,5 +8,6 @@ module.exports = {
     uiSwitch: require('./nodes/ui-switch'),
     uiText: require('./nodes/ui-text'),
     uiTextInput: require('./nodes/ui-text-input'),
+    uiNotification: require('./nodes/ui-notification')
     uiNumeric: require('./nodes/ui-numeric')
 }
